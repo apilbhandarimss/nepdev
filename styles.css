@@ -1,0 +1,223 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    padding: 1em;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+header{
+    height: 40px;
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    border-radius: 50%;
+}
+
+.logo-text {
+    margin: 0;
+    font-size: 1.5em;
+    color: #fff;
+    margin-left: 10px;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.menu-icon {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 2px;
+}
+
+.menu-options {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    background-color: #000000;
+    border: 1px solid #fff;
+    flex-direction: column;
+    align-items: flex-end;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.menu-options a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.menu-options a:hover {
+    background-color: #2980b9;
+}
+.popup-container {
+    margin-top: 5%;
+    background-color: #3498db;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: popupAnimation 1s ease-in-out;
+    margin-left: 20%;
+    margin-right: 20%;
+    height: 300px;
+  
+
+}
+
+.popup-content {
+    text-align: center;
+}
+
+@keyframes popupAnimation {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.content-container {
+    text-align: center;
+}
+
+.animated-text {
+    font-size: 2em;
+    color: #ffffff;
+    display: inline-block;
+}
+
+.animated-text span {
+    display: inline-block;
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+.cool-animation {
+    font-size: 2.5em;
+    color: #ffffff;
+    margin-top: 20px;
+    opacity: 0;
+    animation: slideInUp 1s ease-in-out forwards 0.5s;
+}
+
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.animated-button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #796fff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.animated-button:hover {
+    background-color: #219653;
+}
+@media only screen and (max-width: 768px) {
+    .menu-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo-container {
+        margin-bottom: 10px;
+    }
+
+    .menu-icon {
+        margin-top: 10px;
+    }
+
+    .menu-options {
+        top: 40px;
+        right: 0;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .menu-options a {
+        padding: 10px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .popup-container {
+        margin: 5% auto;
+        margin-left: 10%;
+        margin-right: 10%;
+        height: auto;
+    }
+}
+/* Additional styling for the button */
+.button-container {
+    margin-top: 10px; /* Adjusted margin for better spacing */
+}
+
+.join-button {
+    padding: 8px 15px;
+    font-size: 0.8em;
+    background-color: #27ae60;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.join-button:hover {
+    background-color: #219653;
+}
