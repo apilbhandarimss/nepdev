@@ -3,7 +3,7 @@ function toggleMenu() {
     menuOptions.style.display = (menuOptions.style.display === 'block') ? 'none' : 'block';
 }
 // Set the date and time for the challenge deadline
-const deadline = new Date("Feb 13, 2024 20:00:00 GMT+0545").getTime();
+const deadline = new Date("Feb 21, 2024 20:00:00 GMT+0545").getTime();
 
 // Update the timer every second
 const timer = setInterval(function() {
