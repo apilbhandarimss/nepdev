@@ -1,7 +1,6 @@
-
-
 .main-container {
-    background-color: #3498db;
+
+    background: linear-gradient(92.7deg,#00026c -1.37%,#000670 78.71%);
     color: #fff;
     padding: 20px;
     border-radius: 10px;
@@ -9,8 +8,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 20px auto; /* Centers the main container horizontally and adds vertical space */
     
-    margin-top: 5%;
 }
 
 .image-container {
@@ -31,39 +30,24 @@
 
 .timer-container {
     font-size: 1.5em;
+    margin-bottom: 20px; /* Adds space below the timer container */
 }
 
 /* Additional styling for responsiveness */
 @media only screen and (max-width: 768px) {
     .main-container {
         width: 80%;
-    }
-}
-/* Existing styles... */
-
-/* Mobile styles */
-@media only screen and (max-width: 768px) {
-    .main-container {
-        width: 80%;
-        padding: 15px; /* Adjusted padding for smaller screens */
-        margin-left: 10%;
-        margin-right: 3%;
-
+        padding: 15px;
+        margin: 10px auto; /* Adjusts the space around the main container on smaller screens */
     }
 
-    .image-container {
-        margin-bottom: 10px; /* Reduced margin for better spacing */
-    }
-
-    .challenge-image {
-        border-radius: 0; /* Remove border radius on smaller screens */
-    }
-
+    .image-container,
     .question-container {
-        margin-bottom: 10px; /* Reduced margin for better spacing */
+        margin-bottom: 10px; /* Reduced margin for better spacing on smaller screens */
     }
 
     .timer-container {
         font-size: 1.2em; /* Slightly smaller font size on smaller screens */
+        margin-bottom: 10px; /* Adjusts the space below the timer container on smaller screens */
     }
 }
