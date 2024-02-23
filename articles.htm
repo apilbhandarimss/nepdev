@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="apple-touch-icon" sizes="180x180" href="fab/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="fab/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="fab/favicon-16x16.png">
+    <link rel="manifest" href="fab/site.webmanifest">
+    <title>Article Viewing Page</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        .article-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 5%;
+             background-color: #000000;
+            color: #fff;
+            padding: 20px;
+             border-radius: 10px;
+             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            animation: popupAnimation 1s ease-in-out;
+            margin-left: 20%;
+            margin-right: 20%;
+            background-image: url(bg.png);
+        }
+
+        .article-box {
+            width: calc(100% / 4); /* 4 boxes per row */
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .article-box img {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Adjusts the box size for smaller screens */
+        @media only screen and (max-width: 768px) {
+            .article-box {
+                width: 50%; /* 2 boxes per row */
+            }
+        }
+    </style>
+</head>
+<script>
+    function toggleMenu() {
+    var menuOptions = document.getElementById("menuOptions");
+    menuOptions.style.display = (menuOptions.style.display === 'block') ? 'none' : 'block';
+}
+</script>
+<body>
+       <!-- Header Section -->
+       <header class="menu-container">
+        <div class="logo-container">
+            <h1 class="logo-text" id="logoText">DEVNEP</h1>
+        </div>
+        <div class="menu-icon" onclick="toggleMenu()">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+        <nav class="menu-options" id="menuOptions">
+            <a href="Ecoalert.htm">Eco Alert</a>
+            <a href="csgang.html">CS gang </a>
+            <a href="mathcrew.html">Math Crew</a>
+            <a href="index.html">Home</a>
+        </nav>
+    </header>
+
+    <div class="article-container">
+        <!-- Repeat this block for each article -->
+        <div class="article-box">
+            <img src="github.png" style="border-radius: 50%;" alt="Article Image">
+            <h2>Github Guide</h2>
+            <button style=" background: linear-gradient(92.7deg,#56d364 -1.37%,#79c0ff 78.71%);
+            " ><a href="githubguide.htm">Read</a></button>
+        </div>
+    
+    
+</body>
+</html>
