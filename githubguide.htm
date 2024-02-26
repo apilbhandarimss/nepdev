@@ -49,6 +49,47 @@ h2{
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+h4{
+    color: #ffffff;
+    display: inline-block;
+    color: #79c0ff;
+    background: linear-gradient(92.7deg,#ff0000 -1.37%,#8e0000 78.71%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.article-container {
+            /* Your existing styles */
+            animation: fadeInUp 2s ease-in-out forwards;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .article-image {
+            /* Your existing styles */
+            animation: scaleIn 2s ease-in-out forwards;
+        }
+
+        @keyframes scaleIn {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        
     </style>
 </head>
 <body>
@@ -72,6 +113,7 @@ h2{
 
     <div class="article-container">
         <img src="github.png" alt="Article Image" class="article-image"> <!-- Add this line -->
+        <h4 >Writer:Apil Bhandari</h4>
         <div class="article-content"> <!-- Add this line -->
             <h1>Github for computer science student, benefits uses and ways</h1>
             <p>GitHub is a web-based platform leveraging Git for version control and collaboration in software development. Developers use GitHub repositories to store project files, track changes, and manage collaboration. It facilitates features like pull requests for proposing changes, issues for task tracking, and GitHub Actions for automating workflows. GitHub Pages allows hosting static websites, and the platform encourages community interaction and social coding through discussions, stars, and follows.</p>
@@ -84,6 +126,7 @@ h2{
 
     <p>Students commonly utilize GitHub for collaborative project work with peers and teachers, making it a central hub for storing and working on code. GitHub creates an environment that fosters collaborative development, allowing students to engage in open-source projects and collaborate seamlessly. If you are a K-12 educator or part of a higher education institution, applying for the GitHub Education program provides access to these invaluable tools and training resources for your classroom.</p>
     <h2>Activate GitHub Education Account - Step by Step</h2>
+    
 
 
     <ol>
